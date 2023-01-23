@@ -1,0 +1,61 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "BigInt",
+        "repositoryURL": "https://github.com/attaswift/BigInt.git",
+        "state": {
+          "branch": null,
+          "revision": "0ed110f7555c34ff468e72e1686e59721f2b0da6",
+          "version": "5.3.0"
+        }
+      },
+      {
+        "package": "CryptoSwift",
+        "repositoryURL": "https://github.com/krzyzanowskim/CryptoSwift.git",
+        "state": {
+          "branch": null,
+          "revision": "19b3c3ceed117c5cc883517c4e658548315ba70b",
+          "version": "1.6.0"
+        }
+      },
+      {
+        "package": "EasyConfetti",
+        "repositoryURL": "https://github.com/onmyway133/EasyConfetti",
+        "state": {
+          "branch": null,
+          "revision": "fffe1b1969b91c6cde8f93744957cc6c23087275",
+          "version": "2.4.0"
+        }
+      },
+      {
+        "package": "Nuke",
+        "repositoryURL": "https://github.com/kean/Nuke",
+        "state": {
+          "branch": null,
+          "revision": "a002b7fd786f2df2ed4333fe73a9727499fd9d97",
+          "version": "10.11.2"
+        }
+      },
+      {
+        "package": "QRCode",
+        "repositoryURL": "https://github.com/dagronf/QRCode",
+        "state": {
+          "branch": null,
+          "revision": "55cd9e7b9bb5e3fe698a57c6ed00b848cecdbe2b",
+          "version": "9.2.1"
+        }
+      },
+      {
+        "package": "swift-qrcode-generator",
+        "repositoryURL": "https://github.com/dagronf/swift-qrcode-generator",
+        "state": {
+          "branch": null,
+          "revision": "5ca09b6a2ad190f94aa3d6ddef45b187f8c0343b",
+          "version": "1.0.3"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

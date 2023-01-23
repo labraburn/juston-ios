@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21F79" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Account" representedClassName="PersistenceAccount" syncable="YES">
+        <attribute name="dateCreated" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="dateLastSynchronization" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="isSynchronizing" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="keyPublic" optional="YES" attributeType="String"/>
+        <attribute name="keySecretEncrypted" optional="YES" attributeType="String"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="raw_appearance" attributeType="Transformable" valueTransformerName="AccountAppearanceTransformer"/>
+        <attribute name="raw_balance" attributeType="Integer 64" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="raw_contract_kind" optional="YES" attributeType="String"/>
+        <attribute name="raw_flags" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="raw_selected_address" attributeType="String" valueTransformerName="UInt8ArrayTransformer" customClassName="NSArray"/>
+        <attribute name="raw_selected_contract_kind" optional="YES" attributeType="String"/>
+        <attribute name="sortingLastUsageValue" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="sortingUserValue" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="raw_browser_favourites" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="BrowserFavourite" inverseName="account" inverseEntity="BrowserFavourite"/>
+        <relationship name="raw_pending_transactions" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="PendingTransaction" inverseName="account" inverseEntity="PendingTransaction"/>
+        <relationship name="raw_processed_transactions" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="ProcessedTransaction" inverseName="account" inverseEntity="ProcessedTransaction"/>
+    </entity>
+    <entity name="BrowserBanner" representedClassName="PersistanceBrowserBanner" syncable="YES">
+        <attribute name="priority" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="raw_action" attributeType="Transformable" valueTransformerName="BrowserBannerActionTransformer"/>
+        <attribute name="raw_image_url" attributeType="String"/>
+        <attribute name="subtitle" optional="YES" attributeType="String"/>
+        <attribute name="title" attributeType="String"/>
+    </entity>
+    <entity name="BrowserFavourite" representedClassName="PersistanceBrowserFavourite" syncable="YES">
+        <attribute name="dateCreated" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="raw_url" attributeType="String"/>
+        <attribute name="subtitle" optional="YES" attributeType="String"/>
+        <attribute name="title" attributeType="String"/>
+        <relationship name="account" maxCount="1" deletionRule="Nullify" destinationEntity="Account" inverseName="raw_browser_favourites" inverseEntity="Account"/>
+    </entity>
+    <entity name="PendingTransaction" representedClassName="PersistencePendingTransaction" syncable="YES">
+        <attribute name="dateCreated" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="raw_body" attributeType="String"/>
+        <attribute name="raw_body_hash" attributeType="String"/>
+        <attribute name="raw_destination_address" attributeType="String" valueTransformerName="StringArrayTransformer"/>
+        <attribute name="raw_estimated_fees" attributeType="Integer 64" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="raw_value" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="account" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Account" inverseName="raw_pending_transactions" inverseEntity="Account"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="raw_body_hash"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="ProcessedAction" representedClassName="PersistenceProcessedAction" syncable="YES">
+        <attribute name="raw_body" attributeType="String"/>
+        <attribute name="raw_body_hash" attributeType="String"/>
+        <attribute name="raw_destination_address" optional="YES" attributeType="String"/>
+        <attribute name="raw_fees" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="raw_source_address" optional="YES" attributeType="String"/>
+        <attribute name="raw_value" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="raw_transaction_in" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProcessedTransaction" inverseName="in" inverseEntity="ProcessedTransaction"/>
+        <relationship name="raw_transaction_out" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProcessedTransaction" inverseName="out" inverseEntity="ProcessedTransaction"/>
+    </entity>
+    <entity name="ProcessedTransaction" representedClassName="PersistenceProcessedTransaction" syncable="YES">
+        <attribute name="date" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="raw_day_section_name" optional="YES" transient="YES" attributeType="String"/>
+        <attribute name="raw_fees" attributeType="Integer 64" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="raw_hash" attributeType="String"/>
+        <attribute name="raw_logical_time" attributeType="Integer 64" usesScalarValueType="YES"/>
+        <relationship name="account" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Account" inverseName="raw_processed_transactions" inverseEntity="Account"/>
+        <relationship name="in" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="ProcessedAction" inverseName="raw_transaction_in" inverseEntity="ProcessedAction"/>
+        <relationship name="out" toMany="YES" deletionRule="Cascade" destinationEntity="ProcessedAction" inverseName="raw_transaction_out" inverseEntity="ProcessedAction"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="raw_logical_time"/>
+                <constraint value="raw_hash"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <elements>
+        <element name="Account" positionX="-63" positionY="-9" width="128" height="284"/>
+        <element name="BrowserBanner" positionX="81" positionY="153" width="128" height="104"/>
+        <element name="BrowserFavourite" positionX="90" positionY="162" width="128" height="104"/>
+        <element name="PendingTransaction" positionX="-125.953125" positionY="400.44140625" width="128" height="134"/>
+        <element name="ProcessedAction" positionX="468.75390625" positionY="697.4296875" width="128" height="149"/>
+        <element name="ProcessedTransaction" positionX="212.5859375" positionY="349.9296875" width="128" height="149"/>
+    </elements>
+</model>

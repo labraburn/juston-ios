@@ -1,0 +1,305 @@
+/* Created by Anton Spivak */
+
+/* START - Common */
+"CommonYes" = "Yes";
+"CommonCancel" = "Cancel";
+"CommonDone" = "Done";
+"CommonRemove" = "Remove";
+"CommonDelete" = "Delete";
+"CommonAttention" = "Attention!";
+"CommonSettings" = "Open settings";
+"CommonOK" = "OK";
+"CommonBack" = "Back";
+"CommonSend" = "Send";
+"CommonAddress" = "Address";
+"CommonAmount" = "Amount";
+"CommonNext" = "Next";
+"CommonClose" = "Close";
+"CommonUndoneAction" = "Are you sure? This action cannot being undone!";
+/* END - Common */
+
+
+
+/* START - Onboarding */
+"OnboardingWelcomeTitle" = "Hey!";
+"OnboardingWelcomeDescription" = "This is a JUSTON, simple, non-custodial (we don’t store your keys on our side) and truly WEB3 wallet for TON network. You can create any accounts as you want as well add not yours wallet by public address and look up it's content";
+
+"OnboardingAgreementsTitle" = "User agreements";
+"OnboardingAgreementsDescription" = "Please, review our %@ and %@ after tap accept button if you are satisfied";
+"OnboardingAgreementsTermsOfUse" = "terms of use";
+"OnboardingAgreementsPrivacy" = "privacy policy";
+"OnboardingAgreementsActionButton" = "ACCEPT";
+
+"OnboardingPasscodeTitle" = "Protection";
+"OnboardingPasscodeDescription" = "Before you create any account you should create 6-digit passcode to protect your keys with secure enclave chip";
+"OnboardingPasscodeActionButton" = "CREATE PASSCODE";
+
+"OnboardingIOCTitle" = "Add account";
+"OnboardingIOCDescription" = "Here you can create new TON account or import any if you know it's passphrase or public address";
+
+"OnboardingWordsTitle" = "Danger zone!";
+"OnboardingWordsDescription1" = "This is your secret 24-word passphrase";
+"OnboardingWordsDescription2" = "Save it and NEVER share it with anyone! If you forget this passphrase - we cannot restore account associated with it.\n\nYour passphrase - only your money";
+
+"OnboardingImportTitle" = "Account details";
+"OnboardingImportDescription" = "To import account you can use secret 24-word passphrase or account public address (will be added in read only mode)";
+"OnboardingImportTitleCaption" = "Address, 24-word passphrase, .ton or .t.me domain";
+
+"OnboardingAppearanceTitle" = "Finishing up";
+"OnboardingAppearanceDescription" = "Choose way how your account card will be looks like";
+"OnboardingAppearanceNameTitle" = "Name of account";
+"OnboardingAppearanceNamePlaceholder" = "Text name here";
+
+"OnboardingNextButton" = "NEXT";
+"OnboardingCreateButton" = "CREATE";
+"OnboardingImportButton" = "IMPORT";
+"OnboardingCopyButton" = "COPY";
+"OnboardingDoneButton" = "DONE";
+/* END - Onboarding */
+
+
+
+/* START - AccountRemoving */
+"AccountDeletePromptMessagePublic" = "Are you sure about this?";
+"AccountDeletePromptMessagePrivate" = "Do you remember 24-word passphrase?\n\nYou account will be removed completely forever and we cannot being restore it!";
+"AccountDeleteDestructiveButtonTitle" = "Yes, remove account";
+/* END - AccountRemoving */
+
+
+
+/* START - UnderDevelopment */
+"UnderDevelopmentPromptTitle" = "Will be available soon";
+"UnderDevelopmentPromptMessage" = "We are working hard to make your dreams come true";
+/* END - UnderDevelopment */
+
+
+
+/* START - ApplicationError */
+"ApplicationErrorPasscodeNotSet" = "We can't create new account since application not protected with passcode";
+/* END - ApplicationError */
+
+
+
+/* START - TransactionError */
+"TransactionErrorIsPending" = "Transaction are pending now";
+/* END - TransactionError */
+
+
+
+/* START - AccountError */
+"AccountErrorAccountExists" = "Account already exists with name '%@'";
+/* END - AccountError */
+
+
+
+/* START - ShareQR */
+"ShareQRMainButton" = "Share QR";
+"ShareQRShareAddressButton" = "Share address";
+/* END - ShareQR */
+
+
+
+/* START - PermissionError */
+"PermissionErrorCameraAccessQRCode" = "We can't scan QR code without access to camera. Please allow camera usage in settings";
+"PermissionErrorNotificationsNotEnabled" = "Notifications not enabled";
+/* END - PermissionError */
+
+
+
+/* START - AccountAppearence */
+"AccountAppearenceTitle" = "Appearence";
+"AccountAppearenceDescription" = "Choose account name and visual style";
+"AccountAppearenceNameFieldDescription" = "Name";
+/* END - AccountAppearence */
+
+
+
+/* START - PasscodeView */
+"PasscodeViewEnterCode" = "Enter your 6-digit passcode to authorize this operation";
+"PasscodeViewCreateCode1" = "Create 6-digit passcode and remember it";
+"PasscodeViewCreateCode2" = "Please, repeat 6-digit passcode and remember it";
+/* END - PasscodeView */
+
+
+
+/* START - AccountCard */
+"AccountCardReadonlyLabel" = "READONLY";
+"AccountCardSynchronizationInProgress" = "Syncing..";
+"AccountCardSynchronizationDone" = "Updated %@ ago";
+"AccountCardSynchronizationNow" = "Updated just now";
+/* END - AccountCard */
+
+
+
+/* START - AccountCard */
+"AccountCardSubscribeButton" = "Enable notifications";
+"AccountCardUnsubscribeButton" = "Disable notifications";
+"AccountCardResynchronizeButton" = "Re-synchronize";
+"AccountCardChangeApperanceButton" = "Change apperance";
+"AccountCardBackupButton" = "Backup keys";
+/* END - AccountCard */
+
+
+
+/* START - Announcements */
+"AnnouncementAddressCopied" = "Account address copied to pasteboard";
+"AnnouncementWordsCopied" = "Account secret passphrase copied to pasteboard";
+"AnnouncementTransactionLinkCopied" = "Transaction link copied to pasteboard";
+/* END - Announcements */
+
+
+
+/* START - Settings */
+"SettingsTitle" = "JUSTON";
+"SettingsDescription" = "We are strongly believe in future without bureaucratic and all centralized stuff. Our mission is a freedom and all products will be pointed to achieve it.\n\nEnjoy and feel free to contact us!";
+
+"SettingsShareButton" = "Share";
+"SettingsRateButton" = "Rate us";
+
+"SettingsSystemSettingsTitle" = "System settings";
+"SettingsNotificationsButton" = "Notifications and other";
+
+"SettingsAgreementsTitle" = "Agreements";
+"SettingsPrivacyPolicyButton" = "Privacy policy";
+"SettingsTermsOfUseButton" = "Terms of use";
+
+"SettingsSupportTitle" = "Support";
+"SettingsContactDeveloperButton" = "Contact developer";
+"SettingsCommunityChatButton" = "Community chat";
+
+"SettingsSocialTitle" = "Social";
+"SettingsTelegramButton" = "Telegram";
+"SettingsTwitterButton" = "Twitter";
+/* END - Settings */
+
+
+
+/* START - Developer */
+"DeveloperTitle" = "Developer";
+"DeveloperDescription" = "This is page only for developers. Some action can be dangerous!";
+
+"DeveloperCopyAPNs" = "Copy APNs token";
+"DeveloperClearAllDataButton" = "Clear all data";
+"DeveloperSwitchMainnetButton" = "Switch to mainnet";
+"DeveloperSwitchTestnetButton" = "Switch to testnet";
+/* END - Developer */
+
+
+
+/* START - Transactions */
+"TransactionsEmptyTitle" = "There are no transactions yet";
+"TransactionsEmptyButton" = "RECEIVE";
+/* END - Transactions */
+
+
+
+/* START - Transfer */
+"TransferConformationTitle" = "Confirm transfer";
+"TransferConformationDescription" = "Please, review transfer details and then press send if it's correct";
+
+"TransferDetailsTitle" = "Transfer details";
+"TransferDetailsDescription" = "Fill up destination address of transfer and amount and then press next";
+"TransferDetailsAddressDescription" = "Address, .ton or .t.me domain";
+"TransferDetailsMessageDescription" = "Message (optional)";
+
+"TransferDestinationAddress" = "Destination address";
+"TransferDestinationAmount" = "Amount";
+"TransferDestinationEstimatedFees" = "Estimated fees";
+/* END - Transfer */
+
+
+
+/* START - TransactionDetails */
+"TransactionDetailsTitle" = "Transaction details";
+"TransactionDetailsSender" = "Sender";
+"TransactionDetailsRecipients" = "Recipients";
+"TransactionDetailsDate" = "Date";
+"TransactionDetailsFees" = "Fees";
+"TransactionDetailsMessage" = "Message";
+"TransactionDetailsCopyLink" = "Copy link";
+"TransactionDetailsOpenScanButton" = "Open in browser";
+/* END - TransactionDetails */
+
+
+
+/* START - ReadonlyAccount */
+"ReadonlyAccountTitle" = "Readonly account";
+"ReadonlyAccountMessage" = "This account added by address and doesn't have private keys. You can follow it but can't control it";
+/* END - ReadonlyAccount */
+
+
+
+/* START - UnknownContract */
+"UnknownContractTitle" = "Unknown account type";
+"UnknownContractMessage" = "We can't determine account kind for selected address";
+/* END - UnknownContract */
+
+
+
+/* START - UninitializedContract */
+"UninitializedContractTitle" = "Uninitialized account";
+"UninitializedContractMessage" = "To make this account initialized owner should send first transaction to any";
+/* END - UninitializedContract */
+
+
+
+/* START - AccountContracrtName */
+"AccountContracrtNameUnknown" = "UNKNOWN";
+"AccountContracrtNameUninitialized" = "UNINITIALIZED";
+/* END - AccountContracrtName */
+
+
+
+/* START - Camera */
+"CameraTitle" = "Camera";
+"CameraDescription" = "Please, position camera to any QR code and we will try to detect TON address";
+/* END - AccountContracrtName */
+
+
+
+/* START - Safari3 */
+"Safari3NavigationActionReload" = "Reload";
+"Safari3NavigationActionBack" = "Go back";
+"Safari3NavigationActionForward" = "Go forward";
+"Safari3NavigationActionAddFavoirite" = "Add to favorites";
+"Safari3NavigationActionRemoveFavoirite" = "Remove from favorites";
+"Safari3NavigationActionShare" = "Share";
+"Safari3NavigationActionExplore" = "Home";
+"Safari3NavigationActionBackToBrowser" = "Back to browsing";
+"Safari3NavigationActionSearch" = "Search";
+"Safari3FavouritesEmptyTitle" = "If any of site uses TON — you can authenticate yourself using selected account.\n\nAlso bookmarks will be here";
+"Safari3FavouritesEmptyButton" = "Let's go";
+"Safari3SearchPlaceholder" = "Start typing to find favourites or just search";
+"Safari3ErrorButton" = "Go back";
+"Safari3SearchEmpty" = "Nothing found";
+/* END - Safari3 */
+
+
+
+/* START - Web3Promo */
+"Web3PromoTitle" = "Welcome, WEB3";
+"Web3PromoDescription" = "WEB3 — a future in our opinion, so we added a powerful browser directly to JUSTON wallet application.\n\nYou can explore web and authenticate yourself through account that showing on main screen. Enjoy!";
+/* END - Web3Promo */
+
+
+
+/* START - UserConfirmation */
+"UserConfirmationSignMessage" = "'%@' wants sign raw text.\n\nUsually it's just a check that you are owner of account, but be careful";
+"UserConfirmationTransactionMessage" = "'%@' wants send %@ $TON to %@.\n\nPlease, review details carefully";
+"UserConfirmationTitle" = "Action requested";
+"UserConfirmationConfirmButton" = "Confirm";
+"UserConfirmationDenyButton" = "Cancel";
+"UserConfirmationLargeAmountUnbouncableAddress" = "You are trying to send large amount tokens to non-bounceable address. If address is incorrect you will loose all amount of transaction";
+/* END - UserConfirmation */
+
+
+
+/* START - VeneraExhange */
+"VeneraExhangeTitle" = "VENERA";
+"VeneraExhangeDescription" = "You will be taken to VENERA. Services relating to payments are provided by VENERA, which is a separate platform owned by a third party.\n\nPlease review them %@ and %@ and after tap accept button if you are agree";
+"VeneraExhangeTermsOfUse" = "terms of use";
+"VeneraExhangePrivacy" = "privacy policy";
+"VeneraExhangeActionButton" = "ACCEPT";
+"VeneraExchangeFinishTitle" = "VENERA x JUSTON";
+"VeneraExchangeFinishDescription" = "You are awesome! Thanks for using VENERA :)\n\nNow you need to wait few seconds to receive $TON";
+/* END - UserConfirmation */
