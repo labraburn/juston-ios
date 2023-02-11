@@ -38,4 +38,4 @@ PRODUCT_BUNDLE_IDENTIFIER = ${YOUR_BUNDLE_ID}
 
 ## Contacts
 
-- anton@labraburn.com
+- anton@labraburn.com (stragner.ton)
